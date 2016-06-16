@@ -113,8 +113,6 @@
 		/*display: table-cell;*/
 		vertical-align: middle;
 	}
-
-
 	.hidden{ display:none;}
     .active{
     	   background: white;
