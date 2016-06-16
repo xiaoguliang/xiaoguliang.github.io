@@ -2,156 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Item List</title>
-</head>
-<style>
-	*{
-		margin: 0px;
-		padding:0px;
-	}
-	#Frame{
-		width: 1000px;
-		height: 600px;
-		
-		margin: 0 auto;
-		margin-top: 30px;
-		/*background: lightblue;*/
-		/*兼容当前驻留浏览器，以及IE8，不兼容IE9*/
-		background:-webkit-linear-gradient(to top left,#F11D5F , #813774);
-        background:linear-gradient(to top left,#F11D5F , #813774);
-        background:-moz-linear-gradient(to top left,#F11D5F,#813774);
-        filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#813774,endcolorstr=#F11D5F,gradientType=0);
-	}
-	.title{
-		width: 800px;
-		height: 80px;
-		position: relative;
-		
-		top: 40px;
-		/*padding-top: 20px;*/
-		margin: 0 auto;
-	}
-	#content{
-		margin-top: 100px;
-		width: 800px;
-		position: relative;
-		height: 400px;
-		top: 30px;
-		background: white;
-		
-		margin: 0 auto;
-	}
-	#project-item{
-		list-style: none;
-		margin: 0 auto;
-	}
-	.item1{
-       float: left;
-       width: 140px;
-       height: 60px;
-       margin-top: 10px;
-       line-height: 60px;
-       font-size: 26px;
-       /*background: red;*/
-       text-align: center;
-       margin-left: 18px;
-     /*  border-bottom: 10px solid white;*/
-      /* overflow: hidden;*/
-	}
-	.item1:hover{
-		background: white;
-	}
-	#project-item a{
-		 color: white;
-		 text-decoration: none;
-	}
-	 /*.item1 li a:hover{
-		font-weight: bold;
-		font-size: 28px;
-		color:#AA2E6C;
+	<title>Project</title>
 
-	}	*/
-	.tap-list{
-	/*	background: lightgreen;*/
-		width: 450px;
-		height: 400px;
-		padding-left: 30px;
-		margin-top: 10px;
-        float: left;
-        color: #AA2E6C;
-        overflow: hidden;
-	}
-	
-	.list{
-       padding-top: 15px;
-       width: 450px;
-       /*overflow: hidden;*/
-	}
-	.list span{
-		float: right;
-		padding-right: 12px;
-		font-size: 12px;
-		color: #AA2E6C;
-	}
-	.list a{
-		text-decoration: none;
-		color: #AA2E6C
-		
-	}
-	.list a:hover{
-		text-decoration: underline;
-	}
-	
-	.more{
-		font-size: 16px;
-	}
-	.more:hover{
-		background: transparent;
-	}
-	.more a:hover{
-		color: white;
-		font-size: 16px;
-		cursor: pointer;
-		font-weight:;
-	}
-    img{
-		width: 280px;
-		height: 350px;
-		float: right;
-		padding-right: 25px;
-		padding-top:25px;
-		/*display: table-cell;*/
-		vertical-align: middle;
-	}
-	.hidden{ display:none;}
-    .active{
-    	   background: white;
-	    	font-weight: bold;
-			font-size: 28px;
-			color:#AA2E6C;
-            }
-    #project-item span{
-    	position: relative;
-    	top: 35px;
-    	right: -40px;
-    }
-</style>
+</head>
+<link rel="stylesheet" href="style//demo.css">
 <body>
 	<div id="Frame">
-		<div class="title">
-			<ul id="project-item">
+		<!-- 各项目标题 -->
+		<div class="title">	
+			<ul id="project-item"><!-- 项目标题列表 -->
 				<a href="#"><li class="item1 active">百度前端
 				</li></a>
-				<a href="#"><li class="item1">游戏</li></a>
+				<a href="#"><li class="item1">游戏软件</li></a>
 				<a href="#"><li class="item1">算法</li></a>
-				<a href="#"><li class="item1">个人</li></a>
+				<a href="#"><li class="item1">其他项目</li></a>
 				<a href="#"><span class="more">>>更多</span></a>
                <!--  <li class="item1 more"></li> -->
 			</ul>
 		</div>
-	
+	    <!-- 各项目具体内容 -->
 		<div id="content">
-			<ol class="tap-list">
+			<ol class="tap-list"><!-- 百度前端项目内容列表 -->
 				<li class="list "><a href="https://github.com/xiaoguliang/ife-spring/tree/master/task0001-1">我的第一个网页</a>
 				<span>2016-6-10</span></li>		
 				<li class="list"><a href="https://github.com/xiaoguliang/ife-spring/tree/master/task0001-2">给第一个网页加上样式</a>
@@ -163,108 +34,38 @@
 				<li class="list"><a href="https://github.com/xiaoguliang/ife-spring/tree/master/task0001-5">两列布局的两种方式</a>
 				<span>2016-6-10</span></li>
 				<li class="list"><a href="https://github.com/xiaoguliang/ife-spring/tree/master/task0001-7">三列布局的两种方式</a>
-				<span>2016-6-10</span></li>
-				<!-- <li class="list"><a href="">JS基础部分</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">QQ拖曳</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">选项卡</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">计算器</a>
-				<span>2016-6-10</span></li> -->
+				<span>2016-6-10</span></li>				
 			</ol>
 
 
-			<ol class="hidden">
-				<!-- <li class="list"><a href="">给第一个网页加上样式</a>
-				<span>2016-6-10</span></li>		
-				<li class="list"><a href="">我的第一个网页</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">div居中的两种方式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">自适应的布局</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">两列布局的两种方式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">三列布局的两种方式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">JS基础部分</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">QQ拖曳</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">选项卡</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">计算器</a>
-				<span>2016-6-10</span></li> -->
+			<ol class="hidden">	<!-- 游戏软件项目内容列表 -->	
 			</ol>
 
 
-			<ol class="hidden">
-				<!-- <li class="list"><a href="">给第二个网页加上样式</a>
-				<span>2016-6-10</span></li>		
-				<li class="list"><a href="">我的第一个网页</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">div居中的两种方式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">自适应的布局</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">两列布局的两种方式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">三列布局的两种方式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">JS基础部分</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">QQ拖曳</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">选项卡</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">计算器</a>
-				<span>2016-6-10</span></li> -->
+			<ol class="hidden">	<!-- 算法项目内容列表 -->		
 			</ol>
 
 
-			<ol class="hidden">
-				<!-- <li class="list"><a href="">给第三个网页加上样式</a>
-				<span>2016-6-10</span></li>		
-				<li class="list"><a href="">我的第一个网页</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">div居中的两种方式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">自适应的布局</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">两列布局的两种方式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">三列布局的两种方式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">JS基础部分</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">QQ拖曳</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">选项卡</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="">计算器</a>
-				<span>2016-6-10</span></li> -->
+			<ol class="hidden">	<!-- 其他项目内容列表 -->		
 			</ol>
+			<!-- 右边列表 -->
 			<img src="images//first.jpg" alt="my first picture">
 		</div>
 	</div>
 	<script>
+	//获取项目标题名
   var lis = document.getElementById("project-item").getElementsByTagName("li");
+  // 获取项目内容列表
   var ols = document.getElementById("content").getElementsByTagName("ol");
   var order = 0;
-// console.log(lis);
-// console.log(ols);
+  // 鼠标滑过项目标题时
 for (var i = 0; i < lis.length; i++) {
 	lis[i].value=i;
 	lis[i].onmouseover=function () {
 		this.className="item1 active";
-		// this.style.cssText="font-size:28px,
-		//                      color:red";
 		ChangeTabs(this.value);
 	};
-	// lis[i].onmouveout=function  () {
-	// 	thi
-	// }
+	// 改变项目内容的选项卡
 	function ChangeTabs (nowTab) {
 		lis[order].className="item1";
 		ols[order].className="hidden";
