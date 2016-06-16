@@ -2,14 +2,141 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>xiaoguliang's style</title>
+	<title>xiaoguliang's HomePage</title>
 </head>
 <style>
-	body{
-		background-color: lightblue;
+	*{
+		margin:0px;
+		padding: 0px;
 	}
+	/*主框架*/
+	#Frame{
+		width: 1000px;
+		height: 500px;
+		background: #000020;
+		margin: 0 auto;
+		margin-top: 80px;
+		color: white;
+	}
+
+	.Home{
+		width: 250px;
+		height: 500px;
+		float: left;
+
+	}
+	.Project{
+		width: 250px;
+		height: 500px;
+		float: left;
+	}
+	.Skill{
+		width: 250px;
+		height: 500px;
+		float: left;
+	
+	}
+	.About{
+		width: 250px;
+		height: 500px;
+		float: left;
+		
+	}
+    .center{
+    	text-align: center;
+    }
+    /*.active{
+    	cursor: pointer;
+		background:-webkit-linear-gradient(to top left,#F11D5F , #813774);
+        background:linear-gradient(to top left,#F11D5F , #813774);
+        background:-moz-linear-gradient(to top left,#F11D5F,#813774);
+        filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#813774,endcolorstr=#F11D5F,gradientType=0);
+    }*/
+	a{
+		display: inline-block;
+		text-decoration: none;
+		color: white;
+	}
+	a:hover{
+		cursor: pointer;
+		color: blue;
+	}
+	/*兼容当前驻留浏览器，以及IE8，不兼容IE9*/
+	.Home:hover, .Project:hover, .Skill:hover, .About:hover{
+		cursor: pointer;
+		background:-webkit-linear-gradient(to top left,#F11D5F , #813774);
+        background:linear-gradient(to top left,#F11D5F , #813774);
+        background:-moz-linear-gradient(to top left,#F11D5F,#813774);
+        filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#813774,endcolorstr=#F11D5F,gradientType=0);/*  :root {filter:none;} 
+   -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#813774,endcolorstr=#F11D5F,gradientType=0);*/
+     
+	}
+	.title{
+      font-size: 34px;
+      font-family: "微软雅黑";
+      padding-top: 180px;
+      padding-bottom: 10px;
+	}
+   hr{
+	   width: 70px;
+	  margin: 0 auto;
+	 margin-bottom: 10px;
+
+     }
+    .s_title{
+    	font-size: 14px;
+    	font-family: "Arial";
+    	padding-bottom: 10px;
+    }
+    .brief{
+    	font-size: 12px;
+    	font-family: "Century Gothic";
+    }
 </style>
 <body>
-	<h1>aaaaaaaaaa</h1>
+	<div id="Frame">
+		<!-- 个人主页 -->
+		<div class="Home center">
+			  <p class="title"><a href="#">Home</a></p>
+			  <hr/>
+              <p class="s_title"><a href="">home</a></p>
+              <p class="brief"><a href="">this is my index</a></p>	            
+        </div>
+        <!-- 项目总结 -->
+		<div class="Project center ">
+              <p class="title"><a href="pages//project.html">project</a></p>
+			  <hr/>
+	          <p class="s_title"><a href="">project</a></p>
+	          <p class="brief"><a href="">this is my index</a></p>
+		</div>
+		<!-- 技能 -->
+		<div class="Skill center">
+              <p class="title"><a href="#">skills</a></p>
+			  <hr/>
+	          <p class="s_title"><a href="">skills</a></p>
+	          <p class="brief"><a href="">this is my index</a></p>
+		</div>
+		<!-- 关于 -->
+		<div class="About center">
+              <p class="title"><a href="#">about</a></p>
+			  <hr/>
+	          <p class="s_title"><a href="">about</a></p>
+	          <p class="brief"><a href="">this is my index</a></p>
+		</div>
+	</div>
+	// <script>
+ //       var divs=document.getElementById('Frame').getElementsByTagName("div");
+ //       name=null;
+ //       for (var i = 0; i < divs.length; i++) {
+ //       	divs[i].onmouseover=function  () {	
+ //       		name=this.className;
+ //       		this.className=this.className+" active";     	
+ //       	}
+ //       	divs[i].onmouseout=function  () {
+ //       		 this.className=name;
+ //       	}
+ //       };
+ //       console.log(divs);
+	// </script>
 </body>
 </html>
