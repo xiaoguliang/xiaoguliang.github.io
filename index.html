@@ -3,140 +3,94 @@
 <head>
 	<meta charset="UTF-8">
 	<title>xiaoguliang's HomePage</title>
+	<link rel="stylesheet" href="pages//style//main.css">
+  <link rel="stylesheet" href="pages//style//clippedBox.css">
+  <link rel="stylesheet" href="pages//style//lineBox.css"> 
+  <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<style>
-	*{
-		margin:0px;
-		padding: 0px;
-	}
-	/*主框架*/
-	#Frame{
-		width: 1000px;
-		height: 500px;
-		background: #000020;
-		margin: 0 auto;
-		margin-top: 80px;
-		color: white;
-	}
-
-	.Home{
-		width: 250px;
-		height: 500px;
-		float: left;
-
-	}
-	.Project{
-		width: 250px;
-		height: 500px;
-		float: left;
-	}
-	.Skill{
-		width: 250px;
-		height: 500px;
-		float: left;
-	
-	}
-	.About{
-		width: 250px;
-		height: 500px;
-		float: left;
-		
-	}
-    .center{
-    	text-align: center;
-    }
-    /*.active{
-    	cursor: pointer;
-		background:-webkit-linear-gradient(to top left,#F11D5F , #813774);
-        background:linear-gradient(to top left,#F11D5F , #813774);
-        background:-moz-linear-gradient(to top left,#F11D5F,#813774);
-        filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#813774,endcolorstr=#F11D5F,gradientType=0);
-    }*/
-	a{
-		display: inline-block;
-		text-decoration: none;
-		color: white;
-	}
-	a:hover{
-		cursor: pointer;
-		color: blue;
-	}
-	/*兼容当前驻留浏览器，以及IE8，不兼容IE9*/
-	.Home:hover, .Project:hover, .Skill:hover, .About:hover{
-		cursor: pointer;
-		background:-webkit-linear-gradient(to top left,#F11D5F , #813774);
-        background:linear-gradient(to top left,#F11D5F , #813774);
-        background:-moz-linear-gradient(to top left,#F11D5F,#813774);
-        filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#813774,endcolorstr=#F11D5F,gradientType=0);/*  :root {filter:none;} 
-   -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#813774,endcolorstr=#F11D5F,gradientType=0);*/
-     
-	}
-	.title{
-      font-size: 34px;
-      font-family: "微软雅黑";
-      padding-top: 180px;
-      padding-bottom: 10px;
-	}
-   hr{
-	   width: 70px;
-	  margin: 0 auto;
-	 margin-bottom: 10px;
-
-     }
-    .s_title{
-    	font-size: 14px;
-    	font-family: "Arial";
-    	padding-bottom: 10px;
-    }
-    .brief{
-    	font-size: 12px;
-    	font-family: "Century Gothic";
-    }
-</style>
+<!-- 兼容Chrome，FF -->
 <body>
-	<div id="Frame">
-		<!-- 个人主页 -->
-		<div class="Home center">
-			  <p class="title"><a href="#">Home</a></p>
-			  <hr/>
-              <p class="s_title"><a href="">home</a></p>
-              <p class="brief"><a href="">this is my index</a></p>	            
+<div id="mainFrame">
+   	<div id="left">
+     	  	<a href=""><img  class="logo" src="pages//images//logo.gif" alt=""></a><!-- LOGO图标 -->
+     	  	<div id="navDiv"><!-- 导航 -->
+       	  		<ul class="nav-ul">
+         	  			<li>
+                      <a href="">
+                        <img class="title-img" src="pages//images//code.png" /><!-- 技能的图标 -->
+             	  				<span class="title">skills</span>
+             	  			  <span class="title-dis">chapters summary</span>
+             	  			</a>
+                  </li>
+       	  			  <li>
+                    <a href="pages//project.html">
+                        <img class="title-img" src="pages//images//project.png" /><!-- 项目图标 -->
+                        <span class="title">project</span>
+                        <span class="title-dis">include all my project</span>
+           	  			  </a>
+                  </li>
+       	  			  <li>
+                      <a href="">
+                        <img class="title-img" src="pages//images//about.png" /><!-- 关于图标 -->
+             	  			  <span class="title">about</span>
+                        <span class="title-dis">message about me</span>
+           	  			  </a>
+                  </li>
+       	  		</ul>
+     	  	</div>
+     	  	<div id="iconDiv"><!-- 左边底部链接 -->
+       	  		<ul class="icon-ul">
+         	  			<li><a href=""><span class="glyphicon glyphicon-send" aria-hidden="true"></span></a></li>
+         	  			<li><a href=""><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></a></li>
+         	  			<li><a href=""><span class="glyphicon glyphicon-picture" aria-hidden="true"></span></a></li>
+         	  			<li><a href=""><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+         	  			<li><a href=""><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+       	  		</ul>
+     	  	</div>
+   	</div>
+    <div id="right"><!-- 右半部分 -->
+        <div class="contain "><!-- 居中 -->
+            <div class="clipped-box"><!-- 爆炸盒子 -->
+                <div class="contenter">
+                    <p>Do What You Say,Say What You Do</p>
+                </div>
+            </div>
         </div>
-        <!-- 项目总结 -->
-		<div class="Project center ">
-              <p class="title"><a href="pages//project.html">project</a></p>
-			  <hr/>
-	          <p class="s_title"><a href="">project</a></p>
-	          <p class="brief"><a href="">this is my index</a></p>
-		</div>
-		<!-- 技能 -->
-		<div class="Skill center">
-              <p class="title"><a href="#">skills</a></p>
-			  <hr/>
-	          <p class="s_title"><a href="">skills</a></p>
-	          <p class="brief"><a href="">this is my index</a></p>
-		</div>
-		<!-- 关于 -->
-		<div class="About center">
-              <p class="title"><a href="#">about</a></p>
-			  <hr/>
-	          <p class="s_title"><a href="">about</a></p>
-	          <p class="brief"><a href="">this is my index</a></p>
-		</div>
-	</div>
-	// <script>
- //       var divs=document.getElementById('Frame').getElementsByTagName("div");
- //       name=null;
- //       for (var i = 0; i < divs.length; i++) {
- //       	divs[i].onmouseover=function  () {	
- //       		name=this.className;
- //       		this.className=this.className+" active";     	
- //       	}
- //       	divs[i].onmouseout=function  () {
- //       		 this.className=name;
- //       	}
- //       };
- //       console.log(divs);
-	// </script>
+    		<div id="lineBox"><!-- 线框部分 -->
+            <section>
+                <div class="box"><!-- 第一个线框 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                        <line class="left" x1="0" y1="60" x2="0" y2="-920"/>
+                        <line class="bottom" x1="180" y1="60" x2="-600" y2="60"/>
+                        <line class="right" x1="180" y1="0" x2="180" y2="1380"/>
+                    </svg>
+                    <span>skill</span>
+                </div>
+                <div class="box"><!-- 第二个线框 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                        <line class="left" x1="0" y1="60" x2="0" y2="-920"/>
+                        <line class="bottom" x1="180" y1="60" x2="-600" y2="60"/>
+                        <line class="right" x1="180" y1="0" x2="180" y2="1380"/>
+                    </svg>
+                    <span>project</span>
+                </div>
+                <div class="box"><!-- 第三个线框 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                        <line class="left" x1="0" y1="60" x2="0" y2="-920"/>
+                        <line class="bottom" x1="180" y1="60" x2="-600" y2="60"/>
+                        <line class="right" x1="180" y1="0" x2="180" y2="1380"/>
+                    </svg>
+                    <span>about</span>
+                </div>
+            </section>
+            <img class="img1" src="pages//images//background.jpg" /><!-- 背景图 -->
+        </div>
+    </div>
+</div> 
+<script src="pages//js/jquery.min.js"></script>
+<script src="pages//js//clippedBox.js"></script>
 </body>
 </html>
