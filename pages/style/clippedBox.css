@@ -1,0 +1,43 @@
+.contain {
+	width:50px;
+	margin: 0px auto;
+	font-family: 'adelle-sans', sans-serif;
+}
+.clipped-box {
+	cursor: pointer;
+	-webkit-transition: top 1.2s linear;
+	-moz-transition: top 1.2s linear;
+	transition: top 1.2s linear;
+}
+.clipped-box div {
+	z-index: 9999999;
+	color: #fff;
+	font-size: 1em;
+	padding: 60px 20px;
+	text-align: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background: #153951;
+}
+.clipped-box div p {
+	font-size: 24px;
+	color: white;
+	text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+.clipped-box, .clipped-box div {
+	width: 440px;
+	height: 150px;
+	position: relative;
+	top: 100px;
+	left:-60px;
+}
+.clipped-box div {
+	position: absolute;
+	top: auto;
+	left: 0;
+	background: #153951;
+	-webkit-transition: -webkit-transform 0.4s ease-in, background 0.1s ease-in;
+	-moz-transition: -moz-transform 0.4s ease-in, background 0.1s ease-in;
+	transition: transform 0.4s ease-in, background 0.1s ease-in;
+}

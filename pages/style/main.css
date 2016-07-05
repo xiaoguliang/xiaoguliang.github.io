@@ -1,0 +1,96 @@
+*{
+  margin: 0px;
+  padding:0px;
+}
+body{
+   
+   color: #ecf0f1;
+   font-size: 100%;
+   line-height: 1;
+   font-family: 'Lato', Arial, sans-serif;
+}
+/*整体外部框架*/
+#mainFrame{
+	width: 95%;
+	height: 700px;
+	background: #2c3e50;
+	margin: 0 auto;	
+}
+/*左部分*/
+#left{
+	width: 280px;
+	height: 100%;
+	background: #041316;
+	filter:Alpha(opacity=50);
+	 position:static;
+	 *zoom:9;
+	float: left;
+	position: relative;
+	
+}
+/*左部分-头部Logo*/
+.logo{
+	padding-left: 65px;
+	padding-top: 30px;
+
+} 
+/*左部分-中间导航*/
+#navDiv{
+	position: absolute;
+	top: 240px;	
+}
+.title-img{
+	width: 60px;
+	height: 55px;
+	padding-left: 10px;
+	padding-top: 19px;
+	float: left;
+	margin-right: 30px;
+}
+.title{
+    display: block;
+    font-size: 22px;
+    font-family: "微软雅黑";
+    padding-top: 11px;
+}
+.title-dis{
+	color: #CEC9C9;
+}
+#navDiv ul li{
+	width: 280px;
+	background:#041316;
+	height: 80px;
+	vertical-align: middle;
+}
+#navDiv ul li:hover{
+	background: #0F3E44;
+}
+#navDiv ul li a{
+	color: #fff;
+	margin-top: 5px;
+}
+#navDiv ul a:hover{	
+    text-decoration: none;
+}
+
+/*左部分-底部链接*/
+#iconDiv{
+    position: absolute;
+    bottom: 70px;
+    left: 5px;
+    right: 5px;
+}
+#iconDiv ul li{
+	float: left;
+	width: 30px;
+	margin-left: 20px;
+	font-size: 26px;
+	list-style: none;
+}
+ul{
+	list-style: none;
+}
+#iconDiv ul li a{
+	color: #fff;	
+}
+
