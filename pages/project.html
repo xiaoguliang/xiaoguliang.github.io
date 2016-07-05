@@ -1,79 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Project</title>
-
-</head>
-<link rel="stylesheet" href="style//demo.css">
+  <meta charset="UTF-8">
+  <title>Project</title>
+  <link rel="stylesheet" href="style//projectPage.css">
+  <!-- <link rel="stylesheet" href="style//bootstrap.min.css"> -->
+   <!-- <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
+ </head>
 <body>
-	<div id="Frame">
-		<!-- 各项目标题 -->
-		<div class="title">	
-			<ul id="project-item"><!-- 项目标题列表 -->
-				<a href="#"><li class="item1 active">百度前端
-				</li></a>
-				<a href="#"><li class="item1">游戏软件</li></a>
-				<a href="#"><li class="item1">算法</li></a>
-				<a href="#"><li class="item1">其他项目</li></a>
-				<a href="#"><span class="more">>>更多</span></a>
-               <!--  <li class="item1 more"></li> -->
-			</ul>
-		</div>
-	    <!-- 各项目具体内容 -->
-		<div id="content">
-			<ol class="tap-list"><!-- 百度前端项目内容列表 -->
-				<li class="list "><a href="https://github.com/xiaoguliang/ife-spring/tree/master/task0001-1">我的第一个网页</a>
-				<span>2016-6-10</span></li>		
-				<li class="list"><a href="https://github.com/xiaoguliang/ife-spring/tree/master/task0001-2">给第一个网页加上样式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="https://github.com/xiaoguliang/ife-spring/tree/master/task0001-3">div居中的两种方式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="https://github.com/xiaoguliang/ife-spring/tree/master/task0001-6">自适应的布局</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="https://github.com/xiaoguliang/ife-spring/tree/master/task0001-5">两列布局的两种方式</a>
-				<span>2016-6-10</span></li>
-				<li class="list"><a href="https://github.com/xiaoguliang/ife-spring/tree/master/task0001-7">三列布局的两种方式</a>
-				<span>2016-6-10</span></li>				
-			</ol>
-			<ol class="hidden">	<!-- 游戏软件项目内容列表 -->	
-			</ol>
-			<ol class="hidden">	<!-- 算法项目内容列表 -->		
-			</ol>
-			<ol class="hidden">	<!-- 其他项目内容列表 -->		
-			</ol>
-			<!-- 右边图片 -->
-			<img src="images//first.jpg" alt="my first picture">
-		</div>
-	</div>
-	<script>
-	//获取项目标题名
-  var lis = document.getElementById("project-item").getElementsByTagName("li");
-  // 获取项目内容列表
-  var ols = document.getElementById("content").getElementsByTagName("ol");
-  var order = 0;
-  // 鼠标滑过项目标题时
-for (var i = 0; i < lis.length; i++) {
-	lis[i].value=i;
-	lis[i].onmouseover=function () {
-		this.className="item1 active";
-		ChangeTabs(this.value);
-	};
-	// 改变项目内容的选项卡
-	function ChangeTabs (nowTab) {
-		lis[order].className="item1";
-		ols[order].className="hidden";
-		ols[nowTab].className="tap-list";
-		order=nowTab;
-	}
-};
-	</script>
+  <div id="pageFrame">
+      <div id="header"><!-- 头部 -->
+          <div id="header_nav"><!-- 头部导航 -->
+              <ul class="navigation navbar-fixed-top">
+                  <a href=""><img src="images//logo.gif" width="150px" height="50px" ></a> 
+                  <li class="distan"><a href=""></a></li>
+                  <li><a href="">工具</a></li>
+                  <li><a href="">在线手册</a></li>
+                  <li><a href="">文章</a></li>
+                  <li><a href="../index.html">首页</a></li>
+              </ul>
+          </div>
+          <div id="header_back"><!-- 3d做背景 -->
+              <div class="canvaszz"> </div>   
+              <canvas id="canvas"> </canvas>
+          </div>
+          <div id="header_search"><!-- 头部里搜索框 -->
+              <p><span class="search_title">Look for Less,Do More</span><br/><span class="suc-link">&nbsp;<a href="http://caibaojian.com">provide about the front_end technologe's projcet</a></span><br/>
+              <input class="search_text" type="text" placeholder="搜索插件..."><!-- <img src="images//header_search.png"> --></p> 
+              <i class="visible"></i>
+          </div>
+          <div id="header_tag"><!-- 头部下方的标签导航 -->
+              <ul>
+                  <a href="" class="active"><img src="images//tag_html.png"><li>HTML</li></a>
+                  <a href="" class=""><img src="images//tag_js.png"><li>JScript</li></a>
+                  <a href="" class=""><img src="images//tag_jQury.png"><li>JQury</li></a>
+                  <a href="" class=""><img src="images//tag_boo.png"><li>Frame</li></a>
+                  <a href="" class=""><img src="images//tag_else.png"><li>others</li></a>
+              </ul>
+          </div>
+      </div>
+
+      <div id="content"><!-- 中间项目内容 -->
+        <!-- HTML部分 -->
+        <div class="con">
+            <div class="html_item">
+                <img class="html_item_img"src="images//html_1_1.png" alt=""><!-- 项目图片 -->
+                <div class="html_item_info"><!-- 项目信息简介 -->
+                    <a href="">网站顶部显示载load.js</a>
+                    <p>瀑布流相册可点击放大（适应手机移动端）</p>
+                </div>
+                <div class="html_item_star"><!-- 项目爱心个数 -->
+                    <img src="images//html1_star.png" alt=""><span class="num">100</span>
+                </div>
+            </div>
+            <div class="html_item">
+                <img class="html_item_img"src="images//html_1_1.png" alt="">
+                <div class="html_item_info">
+                    <a href="">网站顶部显示载load.js</a>
+                    <p>瀑布流相册可点击放大（适应手机移动端）</p>
+                </div>
+                <div class="html_item_star">
+                    <img src="images//html1_star.png" alt=""><span class="num">100</span>
+                </div>
+            </div>
+            <div class="html_item">
+                <img class="html_item_img"src="images//html_1_1.png" alt="">
+                <div class="html_item_info">
+                    <a href="">网站顶部显示载load.js</a>
+                    <p>瀑布流相册可点击放大（适应手机移动端）</p>
+                </div>
+                <div class="html_item_star">
+                    <img src="images//html1_star.png" alt=""><span class="num">100</span>
+                </div>
+            </div>
+            <div class="html_item">
+                <img class="html_item_img"src="images//html_1_1.png" alt="">
+                <div class="html_item_info">
+                    <a href="">网站顶部显示载load.js</a>
+                    <p>瀑布流相册可点击放大（适应手机移动端）</p>
+                </div>
+                <div class="html_item_star">
+                    <img src="images//html1_star.png" alt=""><span class="num">100</span>
+                </div>
+            </div>
+            <div class="html_item">
+                <img class="html_item_img"src="images//html_1_1.png" alt="">
+                <div class="html_item_info">
+                    <a href="">网站顶部显示载load.js</a>
+                    <p>瀑布流相册可点击放大（适应手机移动端）</p>
+                </div>
+            <div class="html_item_star">
+                <img src="images//html1_star.png" alt=""><span class="num">100</span>
+            </div>
+        </div>
+        <!-- JS相关部分 -->
+        <div class="con" style="display:none">aaaaaaaaaaaaaaa</div>
+        <!-- JQuery相关部分 -->
+        <div class="con" style="display:none">bbbbbbbbbbbbbbb</div>
+        <!-- boostrap相关部分 -->
+        <div class="con" style="display:none">ccccccccccccccc</div>
+        <!-- 其他内容 -->
+        <div class="con" style="display:none">dddddddddddddddddd</div>
+      </div>
+
+      <div id="footer"><!-- 底部分页 -->
+          <ul>
+            <li><a href="">首页</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">下一页</a></li>
+          </ul>
+      </div>
+  </div>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="js/util.js" type="text/javascript"></script>
+ <script src="js/3Dbg.js" type="text/javascript"></script> -->
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+ // <script src="js/_gg_980_90.js" type="text/javascript"></script>
+  <!-- // <script src="http://www.w2bc.com/scripts/2bc/_gg_980_90.js" type="text/javascript"></script> -->
 </body>
 </html>
-
-
-
-
-
-
-
