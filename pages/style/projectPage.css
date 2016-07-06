@@ -86,6 +86,15 @@ canvas{
   background-repeat: no-repeat;
   border: 1px solid black;
 }
+.suc-link{
+  font-size: 12px;
+  color: #fff;
+  font-family: "微软雅黑";
+}
+.suc-link a:hover{
+  font-size: 14px;
+  color: white;
+}
 #header_search a:hover{
   text-decoration: none;
   font-size: 20px;
@@ -136,7 +145,8 @@ font-size: 18px;
   display: inline-block;
   width: 20px;
   height:20px;
- padding-right:10px;
+  vertical-align:middle;
+  padding-right:13px;
 
 }
 #header_tag ul a:hover{
@@ -183,14 +193,15 @@ font-size: 18px;
 }
 .html_item .html_item_img{
   float: left;
-  width: 193px; 
+  width: 191px;
+  height: 139px; 
   border:15px solid #15438E;
 }
 .html_item .html_item_info{
   display: inline-block;
   height: 60px;
   line-height: 25px;
-  width: 90%;
+  width: 95%;
   padding-top: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -202,12 +213,20 @@ font-size: 18px;
   font-size: 16px;
   width: 220px; 
   overflow: hidden;
+  text-decoration: none;
 
+}
+.html_item .html_item_info a:hover{
+  font-size: 18px;
+  font-weight: bold;
+  color: #345DA2;
 }
 .html_item .html_item_info p{
   padding-left: 25px;
   font-size: 12px;
   color: white;
+  overflow: hidden;
+  cursor: pointer;
 }
 .html_item .html_item_star{
   display: inline-block;
@@ -232,9 +251,9 @@ font-size: 18px;
 #footer{
   height: 50px;
   width: 100%;
-  line-height: 1px;
+  line-height: 50px;
   position: absolute;
-  top: 830px;
+  top: 1260px;
   text-align: center;
   background: #041316;
 
