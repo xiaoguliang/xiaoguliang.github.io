@@ -1,3 +1,6 @@
+#lineBox{
+	width: 100%;
+}
 #lineBox img{
 	position: absolute;
 	cursor: default;	 

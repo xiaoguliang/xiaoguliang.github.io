@@ -1,6 +1,7 @@
 .contain {
 	width:50px;
 	margin: 0px auto;
+	position: relative;
 	font-family: 'adelle-sans', sans-serif;
 }
 .clipped-box {
@@ -30,7 +31,8 @@
 	height: 150px;
 	position: relative;
 	top: 100px;
-	left:-60px;
+	left:-20px;
+	
 }
 .clipped-box div {
 	position: absolute;
