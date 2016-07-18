@@ -1,4 +1,7 @@
-*{margin 0;padding: 0;}
+*{
+	margin 0;
+	padding: 0;
+}
 body{
 	height: 800px;
 	width: 100%;
@@ -6,7 +9,7 @@ body{
 .left{
 	width: 300px;
 	height:800px;
-	background: #24241F;
+	background: #041316;
 	float: left;
 	position: relative;
 	display: inline-block;
@@ -31,30 +34,66 @@ body{
     -moz-transform:scale(1.2,1.2);
     -o-transform:scale(1.2,1.2);
 }
-.conList{
+/*标签名*/
+.left .conList{
   margin-top: 80px;
   font-size: 26px;
   font-family: Arial;
  }
-.conList .conListUl li{
+.left .conList .conListUl li{
 height: 50px;
 line-height: 50px;
 padding-left: 115px;
 }
-/*.conList .conListUl li:hover span{
-	border-bottom: 1px solid #fff;	
-}*/
-.conList .conListUl li:hover{
+.left .conList .conListUl li:hover{
 	background: black;
 }
-.conList .conListUl a{
+.left .conList .conListUl a{
 	 color: #fff;
   text-decoration: none;
 }
+.left .iconDiv{
+	margin-left: 43px;
+	/*background: red;*/
+	margin-top:60px; 
+	width: 300px;
+	height: 30px;
+}
+.left .iconDiv li{
+	float: left;
+	list-style: none;
+	padding: 10px 10px;
+	transition:ease-out 0.2s;
+    -webkit-transition:ease-out 0.2s;
+    -moz-transition:ease-out 0.2s;
+    -o-transition:ease-out 0.2s;
+    transform:scale(1,1);
+    -webkit-transform:scale(1,1);
+    -moz-transform:scale(1,1);
+    -o-transform:scale(1,1);
+}
+.left .QQ{
+	background:url(../../images/QQ.png) no-repeat ;width: 25px;height: 25px;}
+.left .weibo{
+	background:url(../../images/weibo.png) no-repeat ;width: 25px;height: 25px;}
+.left .github{
+	background:url(../../images/github.png) no-repeat ;width: 25px;height: 25px;}
+.left .message{
+	background:url(../../images/message.png) no-repeat ;width: 25px;height: 25px;}
+.left .add{
+	background:url(../../images/add.png) no-repeat ;width: 25px;height: 25px;}
+.left .iconDiv li:hover{
+	cursor: pointer;
+	transform:scale(1.2,1.2);
+    -webkit-transform:scale(1.2,1.2);
+    -moz-transform:scale(1.2,1.2);
+    -o-transform:scale(1.2,1.2);
+}
+/*右侧*/
 .right{
 	position: absolute;
 	display: inline-block;
-	background: #5F5F58;
+	background: #081D22;
 	height: 800px;
     width: 80%;
 	margin: 0 auto;
@@ -73,11 +112,11 @@ padding-left: 115px;
 }
 .Tags{
 	font-size: 40px;
-	border-bottom: 1px solid #CBCBCB;
+	border-bottom: 1px solid #0F2E34;
 }
 .suanfaDiv p,.gitDiv p,.animateDiv p,.yuanxingDiv p,.bootstrapDiv p{
 	font-size: 30px;
-	border-bottom: 1px solid #CBCBCB;
+	border-bottom: 1px solid #0F2E34;
 }
 .listDiv ul li span{
 	padding-right: 40px;
@@ -90,41 +129,4 @@ padding-left: 115px;
 }
 .listDiv ul li a:hover{
 	color: #eee;
-}
-.left .iconDiv{
-	margin-left: 43px;
-	/*background: red;*/
-	margin-top:60px; 
-	width: 300px;
-	height: 30px;
-}
-.left .iconDiv li{
-	float: left;
-	list-style: none;
-	padding: 10px 10px;
-	transition:ease-out 0.2s;
-	       -webkit-transition:ease-out 0.2s;
-	       -moz-transition:ease-out 0.2s;
-	       -o-transition:ease-out 0.2s;
-	       transform:scale(1,1);
-	       -webkit-transform:scale(1,1);
-	       -moz-transform:scale(1,1);
-	       -o-transform:scale(1,1);
-}
-.left .QQ{
-	background:url(../../images/QQ.png) no-repeat ;width: 25px;height: 25px;}
-.left .weibo{
-	background:url(../../images/weibo.png) no-repeat ;width: 25px;height: 25px;}
-.left .github{
-	background:url(../../images/github.png) no-repeat ;width: 25px;height: 25px;}
-.left .message{
-	background:url(../../images/message.png) no-repeat ;width: 25px;height: 25px;}
-.left .add{
-	background:url(../../images/add.png) no-repeat ;width: 25px;height: 25px;}
-.left .iconDiv li:hover{
-	cursor: pointer;
-	transform:scale(1.2,1.2);
-                  -webkit-transform:scale(1.2,1.2);
-                  -moz-transform:scale(1.2,1.2);
-                  -o-transform:scale(1.2,1.2);
 }
